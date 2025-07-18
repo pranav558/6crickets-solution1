@@ -1,0 +1,11 @@
+@if (deadline.error()) {
+  <p class="error">Failed to load deadline information</p>
+} @else if (deadline.isLoading()) {
+  <p>Loading deadline information...</p>
+} @else {
+  @if (deadline.value() === null) {
+    <p class="completed">Deadline Completed!</p>
+  } @else if (deadline.value() !== null) {
+    <p>Seconds left to deadline: {{ deadline.value() }}</p>
+  }
+}
