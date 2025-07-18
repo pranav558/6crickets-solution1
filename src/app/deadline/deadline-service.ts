@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { inject, Injectable } from '@angular/core';
 import { rxResource } from '@angular/core/rxjs-interop';
-import { catchError, distinctUntilChanged, endWith, interval, of, switchMap, takeWhile, tap, throwError } from 'rxjs';
+import { catchError, endWith, interval, switchMap, takeWhile, throwError } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
